@@ -30,7 +30,11 @@ a { color: var(--fg); text-decoration: none; }
   background: var(--bg);
   border-bottom: 1px solid var(--border);
 }
-.logo { font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.logo { font-weight: 700; letter-spacing: .08em; text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+.mark {
+  display: inline-grid; place-items: center; width: 34px; height: 34px;
+  background: var(--fg); color: var(--bg); font-size: .8rem; letter-spacing: 0;
+}
 .nav nav { display: flex; gap: 28px; font-size: .9rem; }
 .nav nav a { color: var(--muted); }
 .nav nav a:hover { color: var(--fg); }
@@ -45,7 +49,7 @@ main { max-width: 960px; margin: 0 auto; padding: 0 32px; }
 .hero { padding: 140px 0 110px; border-bottom: 1px solid var(--border); }
 .eyebrow { color: var(--muted); letter-spacing: .2em; font-size: .85rem; }
 .hero h1 {
-  font-size: clamp(3.2rem, 11vw, 7rem); line-height: 1.05;
+  font-size: clamp(2.8rem, 9vw, 6rem); line-height: 1.1;
   font-weight: 800; letter-spacing: -.03em; margin: 12px 0 24px;
 }
 .lead { font-size: 1.15rem; color: var(--muted); max-width: 520px; }
@@ -97,3 +101,18 @@ footer {
   main { padding: 0 20px; }
   .hero { padding: 90px 0 70px; }
 }
+
+.strip {
+  display: flex; flex-wrap: wrap; gap: 8px 36px; padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: .85rem; letter-spacing: .25em; text-transform: uppercase; color: var(--muted);
+}
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 24px; }
+.stats div { border-left: 2px solid var(--fg); padding-left: 16px; }
+.stats b { display: block; font-size: 3rem; line-height: 1.1; letter-spacing: -.03em; }
+.stats span { color: var(--muted); font-size: .9rem; }
+.principles { list-style: none; counter-reset: p; max-width: 680px; }
+.principles li { counter-increment: p; padding: 18px 0 18px 56px; position: relative; border-top: 1px solid var(--soft); color: var(--muted); }
+.principles li::before { content: "0" counter(p); position: absolute; left: 0; font-weight: 700; color: var(--fg); }
+.principles b { display: block; color: var(--fg); font-size: 1.2rem; }
+.section p.big { font-size: clamp(1.6rem, 5vw, 2.6rem); font-weight: 800; letter-spacing: -.02em; line-height: 1.25; margin-bottom: 20px; }
