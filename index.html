@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张三 | 个人作品集</title>
+  <meta name="description" content="张三的个人作品集：前端开发与产品设计">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#home">张三</a>
+    <nav>
+      <a href="#about">关于</a>
+      <a href="#skills">技能</a>
+      <a href="#projects">作品</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <button id="theme-toggle" aria-label="切换主题">🌓</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="eyebrow">你好，我是</p>
+      <h1>张三</h1>
+      <p class="lead">前端开发者 &amp; 产品设计师，专注于打造简洁、好用的数字产品。</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">查看作品</a>
+        <a class="btn" href="#contact">联系我</a>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <h2>关于我</h2>
+      <p>我有 5 年的 Web 开发经验，热爱把设计转化为流畅的交互体验。工作之外，我喜欢摄影、徒步和开源项目。</p>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <h2>技能</h2>
+      <ul class="tags">
+        <li>HTML / CSS</li><li>JavaScript</li><li>TypeScript</li>
+        <li>React</li><li>Vue</li><li>Node.js</li>
+        <li>Figma</li><li>Git</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <h2>作品</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="thumb" style="--c1:#6366f1;--c2:#8b5cf6"></div>
+          <h3>任务管理应用</h3>
+          <p>支持拖拽排序与离线使用的待办工具。</p>
+          <span class="meta">React · TypeScript</span>
+        </article>
+        <article class="card">
+          <div class="thumb" style="--c1:#06b6d4;--c2:#3b82f6"></div>
+          <h3>数据可视化看板</h3>
+          <p>实时展示业务指标的交互式仪表盘。</p>
+          <span class="meta">Vue · D3</span>
+        </article>
+        <article class="card">
+          <div class="thumb" style="--c1:#f59e0b;--c2:#ef4444"></div>
+          <h3>品牌官网</h3>
+          <p>响应式企业官网，注重性能与可访问性。</p>
+          <span class="meta">HTML · CSS · JS</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <h2>联系我</h2>
+      <p>欢迎合作或交流，来信必回。</p>
+      <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+      <p class="links">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> 张三. 保留所有权利。</footer>
+  <script src="script.js"></script>
+</body>
+</html>
